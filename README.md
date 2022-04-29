@@ -16,4 +16,4 @@ A_Simple_Java_Interactive_Quiz
  - Any java IDE(I used IntelliJ)
  - Internet Connection
  - -Github Account(+Desktop connection for commits)
- - 
+
