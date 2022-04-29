@@ -88,17 +88,17 @@ $(document.ready(function () {
             displayCurrentQuestion();
             hidescore();
         }
-        });
+    });
 
     function displayCurrentQuestion() {
-    console.log ("In display current Question");
+        console.log ("In display current Question");
 
-    var question = questions[CurrentQuestion].question;
-    var questionClass = $(document).find(".quizContainer > .question");
-    var  choiceList = $(document).find(".quizContainer > .choiceList ");
-    var numChoices = questions[currentQuestion].choices.length;
+        var question = questions[CurrentQuestion].question;
+        var questionClass = $(document).find(".quizContainer > .question");
+        var  choiceList = $(document).find(".quizContainer > .choiceList ");
+        var numChoices = questions[currentQuestion].choices.length;
 
-    // Set the questionClass text to the current question
+        // Set the questionClass text to the current question
         $(questionClass).text(question);
 
         // Remove all current </li> elements (if any)
@@ -110,14 +110,14 @@ $(document.ready(function () {
         }
     }
     funtion resetQuiz() {
-    currentQuestion = 0;
-    correctAnswer = 0;
-    hideScore();
+        currentQuestion = 0;
+        correctAnswer = 0;
+        hideScore();
 
-    function displayScore() {
-    $(document).find(".quizContainer > .result").text("You scored: " + correctAnswers + "out of: " + questions.length);
-    $(document).find(".quizContainer > .result").show();
+        function displayScore() {
+            $(document).find(".quizContainer > .result").text("You scored: " + correctAnswers + "out of: " + questions.length);
+            $(document).find(".quizContainer > .result").show();
 
-    function hideScore() {
-        $(document).find(".result").hide();
-}
+            function hideScore() {
+                $(document).find(".result").hide();
+            }
