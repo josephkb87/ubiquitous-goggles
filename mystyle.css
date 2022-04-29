@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Rokkitt);
+@import url(http://fonts.googleapis.com/css?family=Rokkitt); /*Careful on the unsecure import of fonts*/
 h1 {
     font-family: 'Rokkitt', serif;
     text-align: center;
@@ -32,7 +32,7 @@ p {
     padding-top: 5px;
     position: relative;
 }
-
+/* This is the button for the next question in the quiz*/
 .nextButton{
     border-radius: px;
     width:150px;
@@ -47,6 +47,7 @@ p {
     margin:auto;
     padding-top: 20px;
 }
+/* This is the button for the question in the quiz*/
 .question {
 	font-family:'Rokkitt', serif;
 	font-size:2em;
@@ -58,6 +59,7 @@ p {
 	text-align:center;
 	color:#27a63;
 }
+/* This is the button for the quizMessage in the quiz*/
 .quizMessage{
 	background-color: peachpuff;
     border-radius: 6px;
@@ -68,6 +70,8 @@ p {
 	padding: 2px;
 	color:red
 }
+
+/* This is for our result in the quiz*/
 .result{
 	width: 30%
 }
